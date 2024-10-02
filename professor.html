@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+</head>
+<body>
+
+    <script>
+        document.write("<h2>"+document.title+"<h2>");
+    </script>
+
+    <!-- Codigo para alterar nome -->
+    <button type="button" onclick="alert('Bem Vindo!')"> Clique Aqui! </button>
+
+    <p id="paragrafo"> Olá </p>
+    <script>
+        function mFuncao() {
+            var x = document.getElementById("paragrafo");
+            x.innerHTML="Hello!";
+        }
+    </script>
+    <button type="button" onclick="mFuncao();"> Translate </button>
+
+    <script>
+        function trocaImagem() {
+            var elemento=document.getElementById("myimage");
+            if (elemento.src.match("Bulbon")) {
+                    elemento.scr="luz-azul.jpg";
+            } else {
+                elemento.scr="pic_bulbon.gif";
+            }
+        }
+    </script>
+
+<p><img id="myimage" onclick="trocaImagem()"
+    scr="pic_bulboff.gif" width=100 height=180></p>
+<p>Clique na lâmpada para ligar/desligar a luz </p>
+</body>
+</html>
+
+    <!--  -->

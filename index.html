@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    	<meta charset="UTF-8">
+    <meta http-equiv="  -UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Site Mobile, Site Responsivo, Responsividade" />
+	<title>FLASHCAMP</title>
+    <meta name="description" content="Site prático de Responsividade Esportiva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
+    <meta name="author" content="William Felipe">
+    <link rel="stylesheet" href="./">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel= 'https://fonts.googleaps.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="assets/depositphotos_59140149-stock-illustration-football-logo.jpg">
+
+
+    </head>
+    <body>
+        <!-- CABEÇALHO --> 
+        <header class="cabecalho container">
+           <a href="index.html"><h1 class="logo"> Campeonatos Brasileiros</h1></a>
+           <button class="btn-menu bg-gradient"><i class="fa fa-bars fa-lg"></i></button>
+           <nav class="menu">
+               <a class="btn-close"><i class="fa fa-times"></i></a>
+               <ul>
+                   <li><a href="#">Home</a></li>
+                   <li><a href="cadastrar.html">Cadastrar</a></li>
+                   <li><a href="timesA.html">Times serie A</a></li>
+                   <li><a href="timesB.html">Times serie B </a></li>
+                   <li><a href="timesC.html">Times serie C</a></li>
+               </ul>
+           </nav>          
+        </header>
+        <!-- BANNER -->
+        <div class="banner container">
+            <div class="title">
+                <h2> Brasileirão Betano </h2>
+                <h3> Acompanhe o melhor campeonato!</h3>
+            </div>
+        </div>
+        <!-- SERVICOS --> 
+        <main class="servicos container">
+            <article class="servico bg-white radius">
+                <a><img src="Campeonato_Brasileiro_de_Futebol_de_2024_-_Série_A.png" alt="Serie A"></a>
+               <div class="inner">
+                   <a> Serie A </a>
+                   <p>Acompanhe a classificação da serie A.</p>
+               </div>
+            </article>
+            <article class="servico bg-white radius">
+               <a><img src="images.png" alt="Serie B"></a>
+               <div class="inner">
+                   <a> serie B </a>
+                   <p>Acompanhe a classificação da serie B.</p>
+               </div>
+            </article>
+            <article class="servico bg-white radius">
+               <a><img src="images (1).png" alt="Serie C"></a>
+               <div class="inner">
+                   <a> Serie C </a>
+                   <p>Acompanhe a classificação da serie C.</p>
+               </div>
+            </article>
+        </main>    
+        
+        <!-- JQUERY --> 
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>
+        $(".btn-menu").click(function(){
+          $(".menu").show();
+        });
+        $(".btn-close").click(function(){
+          $(".menu").hide();
+        });
+        </script>      
+    </body>
+</html>
